@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payroll | Ekator 8</title>
+    <!-- all the meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- all the css files -->
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css"
+    />
+
+    <!--Custom css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Datepicker css -->
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
+    <!-- Select2 css -->
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <div class="img_wrapper">
+          <img src="assets/images/Sidebar_Logo.png" alt="" />
+        </div>
+        <span class="logo_name">ekattor</span>
+      </div>
+      <div class="closeIcon">
+        <span>close</span>
+      </div>
+      <ul class="nav-links">
+        <!-- sidebar title -->
+        <li>
+          <a href="#" class="sMenu-title">
+            <div class="sidebar_icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 16.5">
+                <path
+                  id="Menu_icon"
+                  data-name="Menu icon"
+                  d="M11,15a2,2,0,0,1-2-2V11a2,2,0,0,1,2-2h2a2,2,0,0,1,2,2v2a2,2,0,0,1-2,2ZM2,15a2,2,0,0,1-2-2V11A2,2,0,0,1,2,9H4a2,2,0,0,1,2,2v2a2,2,0,0,1-2,2Zm9-9A2,2,0,0,1,9,4V2a2,2,0,0,1,2-2h2a2,2,0,0,1,2,2V4a2,2,0,0,1-2,2ZM2,6A2,2,0,0,1,0,4V2A2,2,0,0,1,2,0H4A2,2,0,0,1,6,2V4A2,2,0,0,1,4,6Z"
+                  transform="translate(0.75 0.75)"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <span class="link_name">UI Elements</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">UI Elements</a></li>
+          </ul>
+        </li>
+        <!-- Sidebar menu -->
+        <li class="nav-links-li">
+          <div class="iocn-link">
+            <a href="#">
+              <div class="sidebar_icon">
+                <?xml version="1.0"?><svg
+                  fill="#000000"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    d="M 6 2 C 4.9057453 2 4 2.9057453 4 4 L 4 20 C 4 21.094255 4.9057453 22 6 22 L 18 22 C 19.094255 22 20 21.094255 20 20 L 20 8 L 14 2 L 6 2 z M 6 4 L 13 4 L 13 9 L 18 9 L 18 20 L 6 20 L 6 4 z M 8 12 L 8 14 L 16 14 L 16 12 L 8 12 z M 8 16 L 8 18 L 16 18 L 16 16 L 8 16 z"
+                  />
+                </svg>
+              </div>
+              <span class="link_name">Components</span>
+            </a>
+            <span class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4.743"
+                height="7.773"
+                viewBox="0 0 4.743 7.773"
+              >
+                <path
+                  id="navigate_before_FILL0_wght600_GRAD0_opsz24"
+                  d="M1.466.247,4.5,3.277a.793.793,0,0,1,.189.288.92.92,0,0,1,0,.643A.793.793,0,0,1,4.5,4.5l-3.03,3.03a.828.828,0,0,1-.609.247.828.828,0,0,1-.609-.247.875.875,0,0,1,0-1.219L2.668,3.886.247,1.466A.828.828,0,0,1,0,.856.828.828,0,0,1,.247.247.828.828,0,0,1,.856,0,.828.828,0,0,1,1.466.247Z"
+                  fill="#fff"
+                  opacity="1"
+                />
+              </svg>
+            </span>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Components</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Teacher</a></li>
+            <li><a href="#">Teacher Permission</a></li>
+            <li><a href="#">Parent</a></li>
+            <li><a href="#">Accountant</a></li>
+            <li><a href="#">Librarian</a></li>
+          </ul>
+        </li>
+        <li class="nav-links-li">
+          <div class="iocn-link">
+            <a href="#">
+              <div class="sidebar_icon">
+                <?xml version="1.0"?><svg
+                  fill="#000000"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    d="M 6 2 C 4.9057453 2 4 2.9057453 4 4 L 4 20 C 4 21.094255 4.9057453 22 6 22 L 18 22 C 19.094255 22 20 21.094255 20 20 L 20 8 L 14 2 L 6 2 z M 6 4 L 13 4 L 13 9 L 18 9 L 18 20 L 6 20 L 6 4 z M 8 12 L 8 14 L 16 14 L 16 12 L 8 12 z M 8 16 L 8 18 L 16 18 L 16 16 L 8 16 z"
+                  />
+                </svg>
+              </div>
+              <span class="link_name">Tables</span>
+            </a>
+            <span class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4.743"
+                height="7.773"
+                viewBox="0 0 4.743 7.773"
+              >
+                <path
+                  id="navigate_before_FILL0_wght600_GRAD0_opsz24"
+                  d="M1.466.247,4.5,3.277a.793.793,0,0,1,.189.288.92.92,0,0,1,0,.643A.793.793,0,0,1,4.5,4.5l-3.03,3.03a.828.828,0,0,1-.609.247.828.828,0,0,1-.609-.247.875.875,0,0,1,0-1.219L2.668,3.886.247,1.466A.828.828,0,0,1,0,.856.828.828,0,0,1,.247.247.828.828,0,0,1,.856,0,.828.828,0,0,1,1.466.247Z"
+                  fill="#fff"
+                  opacity="1"
+                />
+              </svg>
+            </span>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Tables</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Teacher</a></li>
+            <li><a href="#">Teacher Permission</a></li>
+            <li><a href="#">Parent</a></li>
+            <li><a href="#">Accountant</a></li>
+            <li><a href="#">Librarian</a></li>
+          </ul>
+        </li>
+        <li class="nav-links-li">
+          <div class="iocn-link">
+            <a href="#">
+              <div class="sidebar_icon">
+                <?xml version="1.0"?><svg
+                  fill="#000000"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    d="M 6 2 C 4.9057453 2 4 2.9057453 4 4 L 4 20 C 4 21.094255 4.9057453 22 6 22 L 18 22 C 19.094255 22 20 21.094255 20 20 L 20 8 L 14 2 L 6 2 z M 6 4 L 13 4 L 13 9 L 18 9 L 18 20 L 6 20 L 6 4 z M 8 12 L 8 14 L 16 14 L 16 12 L 8 12 z M 8 16 L 8 18 L 16 18 L 16 16 L 8 16 z"
+                  />
+                </svg>
+              </div>
+              <span class="link_name">Forms</span>
+            </a>
+            <span class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4.743"
+                height="7.773"
+                viewBox="0 0 4.743 7.773"
+              >
+                <path
+                  id="navigate_before_FILL0_wght600_GRAD0_opsz24"
+                  d="M1.466.247,4.5,3.277a.793.793,0,0,1,.189.288.92.92,0,0,1,0,.643A.793.793,0,0,1,4.5,4.5l-3.03,3.03a.828.828,0,0,1-.609.247.828.828,0,0,1-.609-.247.875.875,0,0,1,0-1.219L2.668,3.886.247,1.466A.828.828,0,0,1,0,.856.828.828,0,0,1,.247.247.828.828,0,0,1,.856,0,.828.828,0,0,1,1.466.247Z"
+                  fill="#fff"
+                  opacity="1"
+                />
+              </svg>
+            </span>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Forms</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Teacher</a></li>
+            <li><a href="#">Teacher Permission</a></li>
+            <li><a href="#">Parent</a></li>
+            <li><a href="#">Accountant</a></li>
+            <li><a href="#">Librarian</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <div class="home-header">
+          <div class="row w-100 justify-content-between align-items-center">
+            <div class="col-auto">
+              <div class="sidebar_menu_icon">
+                <div class="menuList">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="12"
+                    viewBox="0 0 15 12"
+                  >
+                    <path
+                      id="Union_5"
+                      data-name="Union 5"
+                      d="M-2188.5,52.5v-2h15v2Zm0-5v-2h15v2Zm0-5v-2h15v2Z"
+                      transform="translate(2188.5 -40.5)"
+                      fill="#6e6f78"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto d-xl-block d-none">
+              <div class="header_notification d-flex align-items-center">
+                <div class="notification_icon">
+                  <i class="bi bi-bell"></i>
+                </div>
+                <p>
+                  will Come to School Wearing a Mask
+                  <span>Covid-19. Stay safe!</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="header-menu">
+                <ul>
+                  <li>
+                    <a href="" class="list">
+                      <span class="success-counter">20</span>
+                      <i class="bi bi-bell"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="list">
+                      <span class="danger-counter">20</span>
+                      <i class="bi bi-chat-dots"></i>
+                    </a>
+                  </li>
+                  <li class="user-profile">
+                    <div class="btn-group">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        id="defaultDropdown"
+                        data-bs-toggle="dropdown"
+                        data-bs-auto-close="true"
+                        aria-expanded="false"
+                      >
+                        <div class="">
+                          <img src="assets/images/user.jpeg" height="42px" />
+                        </div>
+                        <div class="px-2 text-start">
+                          <span class="user-name">David Warner</span>
+                          <span class="user-title">Superadmin</span>
+                        </div>
+                      </button>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end eDropdown-menu"
+                        aria-labelledby="defaultDropdown"
+                      >
+                        <li class="user-profile user-profile-inner">
+                          <button
+                            class="btn w-100 d-flex align-items-center"
+                            type="button"
+                          >
+                            <div class="">
+                              <img
+                                class="radious-5px"
+                                src="assets/images/user.jpeg"
+                                height="42px"
+                              />
+                            </div>
+                            <div class="px-2 text-start">
+                              <span class="user-name">David Warner</span>
+                              <span class="user-title">Superadmin</span>
+                            </div>
+                          </button>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13.275"
+                                height="14.944"
+                                viewBox="0 0 13.275 14.944"
+                              >
+                                <g
+                                  id="user_icon"
+                                  data-name="user icon"
+                                  transform="translate(-1368.531 -147.15)"
+                                >
+                                  <g
+                                    id="Ellipse_1"
+                                    data-name="Ellipse 1"
+                                    transform="translate(1370.609 147.15)"
+                                    fill="none"
+                                    stroke="#181c32"
+                                    stroke-width="2"
+                                  >
+                                    <ellipse
+                                      cx="4.576"
+                                      cy="4.435"
+                                      rx="4.576"
+                                      ry="4.435"
+                                      stroke="none"
+                                    />
+                                    <ellipse
+                                      cx="4.576"
+                                      cy="4.435"
+                                      rx="3.576"
+                                      ry="3.435"
+                                      fill="none"
+                                    />
+                                  </g>
+                                  <path
+                                    id="Path_41"
+                                    data-name="Path 41"
+                                    d="M1485.186,311.087a5.818,5.818,0,0,1,5.856-4.283,5.534,5.534,0,0,1,5.466,4.283"
+                                    transform="translate(-115.686 -149.241)"
+                                    fill="none"
+                                    stroke="#181c32"
+                                    stroke-width="2"
+                                  />
+                                </g>
+                              </svg>
+                            </span>
+                            My Account
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="15.774"
+                                height="12.619"
+                                viewBox="0 0 15.774 12.619"
+                              >
+                                <path
+                                  id="Path_1203"
+                                  data-name="Path 1203"
+                                  d="M17.774,5.577A1.582,1.582,0,0,0,16.2,4H3.577A1.582,1.582,0,0,0,2,5.577v9.465a1.582,1.582,0,0,0,1.577,1.577H16.2a1.582,1.582,0,0,0,1.577-1.577Zm-1.577,0L9.887,9.521,3.577,5.577Zm0,9.465H3.577V7.155L9.887,11.1,16.2,7.155Z"
+                                  transform="translate(-2 -4)"
+                                  fill="#181c32"
+                                />
+                              </svg>
+                            </span>
+                            Inbox
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14.602"
+                                height="14.636"
+                                viewBox="0 0 14.602 14.636"
+                              >
+                                <g
+                                  id="Setting_icon"
+                                  data-name="Setting icon"
+                                  transform="translate(-215.957 -39.599)"
+                                >
+                                  <path
+                                    id="Path_387"
+                                    data-name="Path 387"
+                                    d="M8.332,3.961a1.254,1.254,0,0,1,2.439,0,1.254,1.254,0,0,0,1.873.778,1.257,1.257,0,0,1,1.725,1.73,1.259,1.259,0,0,0,.775,1.877,1.259,1.259,0,0,1,0,2.445,1.259,1.259,0,0,0-.776,1.878,1.257,1.257,0,0,1-1.725,1.73,1.254,1.254,0,0,0-1.872.777,1.254,1.254,0,0,1-2.439,0A1.254,1.254,0,0,0,6.459,14.4a1.257,1.257,0,0,1-1.725-1.73,1.259,1.259,0,0,0-.775-1.877,1.259,1.259,0,0,1,0-2.445,1.259,1.259,0,0,0,.776-1.878A1.257,1.257,0,0,1,6.46,4.738a1.254,1.254,0,0,0,1.872-.777Z"
+                                    transform="translate(213.707 37.349)"
+                                    fill="none"
+                                    stroke="#181c32"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                  <circle
+                                    id="Ellipse_2"
+                                    data-name="Ellipse 2"
+                                    cx="1.689"
+                                    cy="1.689"
+                                    r="1.689"
+                                    transform="translate(221.57 45.415)"
+                                    fill="none"
+                                    stroke="#181c32"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                </g>
+                              </svg>
+                            </span>
+                            Settings
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="15.062"
+                                height="15.062"
+                                viewBox="0 0 15.062 15.062"
+                              >
+                                <path
+                                  id="Support_icon"
+                                  data-name="Support icon"
+                                  d="M8.778,5.765h1.506V7.272H8.778Zm0,3.012h1.506V13.3H8.778ZM9.531,2a7.531,7.531,0,1,0,7.531,7.531A7.534,7.534,0,0,0,9.531,2Zm0,13.555a6.025,6.025,0,1,1,6.025-6.025A6.033,6.033,0,0,1,9.531,15.555Z"
+                                  transform="translate(-2 -2)"
+                                  fill="#181c32"
+                                />
+                              </svg>
+                            </span>
+                            Support
+                          </a>
+                        </li>
+                        <!-- Logout Button -->
+                        <li>
+                          <a class="btn eLogut_btn" href="#">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14.046"
+                                height="12.29"
+                                viewBox="0 0 14.046 12.29"
+                              >
+                                <path
+                                  id="Logout"
+                                  d="M4.389,42.535H2.634a.878.878,0,0,1-.878-.878V34.634a.878.878,0,0,1,.878-.878H4.389a.878.878,0,0,0,0-1.756H2.634A2.634,2.634,0,0,0,0,34.634v7.023A2.634,2.634,0,0,0,2.634,44.29H4.389a.878.878,0,1,0,0-1.756Zm9.4-5.009-3.512-3.512a.878.878,0,0,0-1.241,1.241l2.015,2.012H5.267a.878.878,0,0,0,0,1.756H11.05L9.037,41.036a.878.878,0,1,0,1.241,1.241l3.512-3.512A.879.879,0,0,0,13.788,37.525Z"
+                                  transform="translate(0 -32)"
+                                  fill="#fff"
+                                />
+                              </svg>
+                            </span>
+                            Log out
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main_content">
+          <!-- Mani section header and breadcrumb -->
+          <div class="mainSection-title">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="d-flex justify-content-between align-items-center flex-wrap gr-15"
+                >
+                  <div class="d-flex flex-column">
+                    <h4>Human Resource</h4>
+                    <ul class="d-flex align-items-center eBreadcrumb-2">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Human Resource</a></li>
+                      <li><a href="#">Payroll</a></li>
+                    </ul>
+                  </div>
+                  <div class="export-btn-area">
+                    <a href="#" class="export_btn">Create Payslip</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start Admin area -->
+          <div class="row">
+            <div class="col-12">
+              <div class="eSection-wrap-2">
+                <!-- Filter area -->
+                <div class="att-filter d-flex flex-wrap justify-content-center">
+                  <div class="att-filter-option">
+                    <select
+                      class="form-select eForm-select eChoice-multiple-without-remove"
+                    >
+                      <option value="Select a month">Select a month</option>
+                      <option value="January">January</option>
+                      <option value="February">February</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                    </select>
+                  </div>
+                  <div class="att-filter-option">
+                    <select
+                      class="form-select eForm-select eChoice-multiple-without-remove"
+                    >
+                      <option value="Select a year">Select a year</option>
+                      <option value="2022">2022</option>
+                      <option value="2021">2021</option>
+                      <option value="2020">2020</option>
+                      <option value="2019">2019</option>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                      <option value="2014">2014</option>
+                    </select>
+                  </div>
+                  <a href="#" class="att-filter-btn">Filter</a>
+                </div>
+                <div class="table-responsive border-top">
+                  <table class="table eTable eTable-2">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">USER</th>
+                        <th scope="col" colspan="2">SUMMARY</th>
+                        <th scope="col">DATE</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">OPTIONS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                          <p class="row-number">01</p>
+                        </th>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p><span>Teacher</span></p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>Net salary:</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name">
+                            <div class="dAdmin_info_name min-w-100px">
+                              <p>2500</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>August, 2022</p>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="eBadge ebg-soft-success">Paid</span>
+                        </td>
+                        <td>
+                          <div class="adminTable-action">
+                            <button
+                              type="button"
+                              class="eBtn eBtn-black dropdown-toggle table-action-btn-2"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Actions
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end eDropdown-menu-2 eDropdown-table-action"
+                            >
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="#"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#payslipModal"
+                                  >Payslip</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="#"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#paymentModal"
+                                  >Make Payment</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <p class="row-number">01</p>
+                        </th>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p><span>Teacher</span></p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>Net salary:</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name">
+                            <div class="dAdmin_info_name min-w-100px">
+                              <p>2500</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>August, 2022</p>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="eBadge ebg-soft-success">Paid</span>
+                        </td>
+                        <td>
+                          <div class="adminTable-action">
+                            <button
+                              type="button"
+                              class="eBtn eBtn-black dropdown-toggle table-action-btn-2"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Actions
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end eDropdown-menu-2 eDropdown-table-action"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Payslip</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Make Payment</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <p class="row-number">02</p>
+                        </th>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p><span>Teacher</span></p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>Net salary:</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name">
+                            <div class="dAdmin_info_name min-w-100px">
+                              <p>2500</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>August, 2022</p>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="eBadge ebg-soft-red">Unpaid</span>
+                        </td>
+                        <td>
+                          <div class="adminTable-action">
+                            <button
+                              type="button"
+                              class="eBtn eBtn-black dropdown-toggle table-action-btn-2"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Actions
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end eDropdown-menu-2 eDropdown-table-action"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Payslip</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Make Payment</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <p class="row-number">01</p>
+                        </th>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p><span>Teacher</span></p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>Net salary:</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name">
+                            <div class="dAdmin_info_name min-w-100px">
+                              <p>2500</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>August, 2022</p>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="eBadge ebg-soft-success">Paid</span>
+                        </td>
+                        <td>
+                          <div class="adminTable-action">
+                            <button
+                              type="button"
+                              class="eBtn eBtn-black dropdown-toggle table-action-btn-2"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Actions
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end eDropdown-menu-2 eDropdown-table-action"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Payslip</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Make Payment</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <p class="row-number">01</p>
+                        </th>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p><span>Teacher</span></p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>Net salary:</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name">
+                            <div class="dAdmin_info_name min-w-100px">
+                              <p>2500</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>August, 2022</p>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="eBadge ebg-soft-success">Paid</span>
+                        </td>
+                        <td>
+                          <div class="adminTable-action">
+                            <button
+                              type="button"
+                              class="eBtn eBtn-black dropdown-toggle table-action-btn-2"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Actions
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end eDropdown-menu-2 eDropdown-table-action"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Payslip</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Make Payment</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <p class="row-number">02</p>
+                        </th>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p><span>Teacher</span></p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>Net salary:</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name">
+                            <div class="dAdmin_info_name min-w-100px">
+                              <p>2500</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>August, 2022</p>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="eBadge ebg-soft-red">Unpaid</span>
+                        </td>
+                        <td>
+                          <div class="adminTable-action">
+                            <button
+                              type="button"
+                              class="eBtn eBtn-black dropdown-toggle table-action-btn-2"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Actions
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end eDropdown-menu-2 eDropdown-table-action"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Payslip</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Make Payment</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <p class="row-number">01</p>
+                        </th>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p><span>Teacher</span></p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>Net salary:</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name">
+                            <div class="dAdmin_info_name min-w-100px">
+                              <p>2500</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="dAdmin_info_name min-w-100px">
+                            <p>August, 2022</p>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="eBadge ebg-soft-success">Paid</span>
+                        </td>
+                        <td>
+                          <div class="adminTable-action">
+                            <button
+                              type="button"
+                              class="eBtn eBtn-black dropdown-toggle table-action-btn-2"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Actions
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end eDropdown-menu-2 eDropdown-table-action"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Payslip</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Make Payment</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Admin area -->
+
+          <!-- Modal Payslip -->
+          <div
+            class="modal fade"
+            id="payslipModal"
+            tabindex="-1"
+            aria-labelledby="payslipModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content payslip_modal_content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="payslipModalLabel">
+                    Payslip details
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body payslip_modal_body">
+                  <div class="payslip_user_summary text-center">
+                    <h4 class="item">
+                      Employee :
+                      <span class="inner-item">Mrs. David Warner</span>
+                    </h4>
+                    <p class="item">
+                      Date : <span class="inner-item">August, 2022</span>
+                    </p>
+                    <p class="item">
+                      Status : <span class="eBadge ebg-soft-success">Paid</span>
+                    </p>
+                  </div>
+                  <!-- Invoice Summary -->
+                  <div
+                    class="invoice_summary d-flex flex-column payslip_modal_body_content"
+                  >
+                    <div class="invoice_summary_item">
+                      <div class="summary_title d-flex align-items-center">
+                        <h4>Allowance Summary</h4>
+                      </div>
+                      <div class="summary_table">
+                        <div
+                          class="summary_thead d-flex justify-content-between align-items-center"
+                        >
+                          <h4>TYPE</h4>
+                          <h4>AMOUNT</h4>
+                        </div>
+                        <div
+                          class="summary_tbody d-flex justify-content-between align-items-center"
+                        >
+                          <span class="eBadge ebg-soft-success">Paid</span>
+                          <p class="amount">500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="invoice_summary_item">
+                      <div class="summary_title d-flex align-items-center">
+                        <h4>Deduction Summary</h4>
+                      </div>
+                      <div class="summary_table">
+                        <div
+                          class="summary_thead d-flex justify-content-between align-items-center"
+                        >
+                          <h4>TYPE</h4>
+                          <h4>AMOUNT</h4>
+                        </div>
+                        <div
+                          class="summary_tbody d-flex justify-content-between align-items-center"
+                        >
+                          <span class="eBadge ebg-soft-success">Paid</span>
+                          <p class="amount">500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="invoice_summary_item">
+                      <div class="summary_title d-flex align-items-center">
+                        <h4>Payslip Summary</h4>
+                      </div>
+                      <div class="salary_table">
+                        <div class="table-responsive">
+                          <table class="table eTable eTable-2">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="dAdmin_info_name">
+                                    <p>Basic Salary</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="dAdmin_info_name">
+                                    <p>1500</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="dAdmin_info_name">
+                                    <p>Total Allowance</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="dAdmin_info_name">
+                                    <p>500</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="dAdmin_info_name">
+                                    <p>Total Dedication</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="dAdmin_info_name">
+                                    <p>500</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="dAdmin_info_name">
+                                    <p><span>Net Salary:</span></p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="dAdmin_info_name">
+                                    <p><span>2500</span></p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Paymentslip -->
+          <div
+            class="modal fade"
+            id="paymentModal"
+            tabindex="-1"
+            aria-labelledby="paymentModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+              <div class="modal-content payment_modal_content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="paymentModalLabel">
+                    Make payment
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body payment_modal_body">
+                  <div
+                    class="payment_modal_body_content d-flex flex-column flex-xl-row align-items-start"
+                  >
+                    <!-- Tab -->
+                    <div
+                      class="nav flex-md-column flex-row nav-pills payment_modalTab"
+                      id="v-pills-tab"
+                      role="tablist"
+                      aria-orientation="vertical"
+                    >
+                      <p class="payment_tab_title">Payment Gateway</p>
+                      <div
+                        class="tabItem active"
+                        id="v-pills-paypal-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-paypal"
+                        role="tab"
+                        aria-controls="v-pills-paypal"
+                        aria-selected="true"
+                      >
+                        <div
+                          class="payment_gateway_option d-flex align-items-center"
+                        >
+                          <div class="logo">
+                            <img src="assets/images/PayPal.png" alt="" />
+                          </div>
+                          <div class="info">
+                            <p class="card_no">Paypay ******7423</p>
+                            <p class="card_date">Card expires at 03/25</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tabItem"
+                        id="v-pills-offPayment-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-offPayment"
+                        role="tab"
+                        aria-controls="v-pills-offPayment"
+                        aria-selected="false"
+                      >
+                        <div
+                          class="payment_gateway_option d-flex align-items-center"
+                        >
+                          <div class="logo">
+                            <img
+                              src="assets/images/offline_payment.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="info">
+                            <p class="card_no">Offline payment</p>
+                            <p class="card_date">Payment Document</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Content -->
+                    <div
+                      class="tab-content payment_modalTab_content"
+                      id="v-pills-tabContent"
+                    >
+                      <p class="payment_tab_title pb-30">Invoice List</p>
+                      <div
+                        class="tab-pane fade show active"
+                        id="v-pills-paypal"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-paypal-tab"
+                        tabindex="0"
+                      >
+                        <div class="payment_table">
+                          <div class="table-responsive">
+                            <table class="table eTable eTable-2">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p><span>01</span></p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="dAdmin_info_name min-w-100px">
+                                      <p>Test Exam Fee</p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="dAdmin_info_name min-w-150px text-end"
+                                    >
+                                      <p>$25</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p><span>02</span></p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p>Test Exam Fee</p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="dAdmin_info_name min-w-150px text-end"
+                                    >
+                                      <p>$25</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p><span>03</span></p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p>Test Exam Fee</p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="dAdmin_info_name min-w-150px text-end"
+                                    >
+                                      <p>$25</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>
+                                    <div
+                                      class="dAdmin_info_name min-w-150px text-end"
+                                    >
+                                      <p><span>Grand Total: $25</span></p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <a href="#" class="paypal_btn">Pay by paypal</a>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="v-pills-offPayment"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-offPayment-tab"
+                        tabindex="0"
+                      >
+                        <div class="payment_table">
+                          <div class="table-responsive">
+                            <table class="table eTable eTable-2">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p><span>01</span></p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="dAdmin_info_name min-w-100px">
+                                      <p>Test Exam Fee</p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="dAdmin_info_name min-w-150px text-end"
+                                    >
+                                      <p>$25</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p><span>02</span></p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p>Test Exam Fee</p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="dAdmin_info_name min-w-150px text-end"
+                                    >
+                                      <p>$25</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p><span>03</span></p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="dAdmin_info_name">
+                                      <p>Test Exam Fee</p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="dAdmin_info_name min-w-150px text-end"
+                                    >
+                                      <p>$25</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>
+                                    <div
+                                      class="dAdmin_info_name min-w-150px text-end"
+                                    >
+                                      <p><span>Grand Total: $25</span></p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="off_payment_form">
+                          <div class="payable_amount mb-16">
+                            <label for="payableAmount" class="eForm-label"
+                              >Payable amount</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control eForm-control"
+                              id="payableAmount"
+                              placeholder="$25"
+                              aria-label="$25"
+                            />
+                          </div>
+                          <div class="payable_document">
+                            <label for="payableDocuemnt" class="eForm-label"
+                              >Document of your payment (jpg, pdf, txt, png,
+                              docx)</label
+                            >
+                            <input
+                              class="form-control eForm-control-file"
+                              type="file"
+                              id="payableDocuemnt"
+                            />
+                          </div>
+                        </div>
+                        <a href="#" class="off_payment_btn"
+                          >Submit payment doucument</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start Footer -->
+          <div class="copyright-text">
+            <p>2022 &copy; <span>By Creativeitem</span></p>
+          </div>
+          <!-- End Footer -->
+        </div>
+      </div>
+    </section>
+
+    <!--Main Jquery-->
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!--Bootstrap bundle with popper-->
+    <script src="assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Datepicker js -->
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <!-- Select2 js -->
+    <script src="assets/js/select2.min.js"></script>
+
+    <!--Custom Script-->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

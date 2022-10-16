@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+	<title>Login | Ekator 8</title>
+	<!-- all the meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<!-- all the css files -->
+	<link rel="shortcut icon" href="assets/images/logo.png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css">
+
+	<!--Custom css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.4/b-2.2.2/b-print-2.2.2/r-2.2.9/datatables.min.css" />
+
+
+	<!--Main Jquery-->
+	<script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="navigation-section">
+			<div class="side-navigation-bar">
+				<div class="nav-header">
+					<div class="logo">
+						<img src="assets/images/logo.png">
+					</div>
+					<div class="header">
+						<h3>Ekattor</h3>
+					</div>
+				</div>
+
+				<ul class="parent-side-bar">
+					<li>
+						<a href="index.html" class="active">
+							<div class="svg-icon1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5"
+									viewBox="0 0 16.5 16.5">
+									<path id="Menu_icon" data-name="Menu icon"
+										d="M11,15a2,2,0,0,1-2-2V11a2,2,0,0,1,2-2h2a2,2,0,0,1,2,2v2a2,2,0,0,1-2,2ZM2,15a2,2,0,0,1-2-2V11A2,2,0,0,1,2,9H4a2,2,0,0,1,2,2v2a2,2,0,0,1-2,2Zm9-9A2,2,0,0,1,9,4V2a2,2,0,0,1,2-2h2a2,2,0,0,1,2,2V4a2,2,0,0,1-2,2ZM2,6A2,2,0,0,1,0,4V2A2,2,0,0,1,2,0H4A2,2,0,0,1,6,2V4A2,2,0,0,1,4,6Z"
+										transform="translate(0.75 0.75)" stroke-width="1.5" />
+								</svg>
+							</div>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li class="parent-droupdown">
+						<a href="javascript:;" class="parent-droupdown-menu">
+							<div class="svg-icon3">
+								<svg xmlns="http://www.w3.org/2000/svg" width="15.12" height="17.338"
+									viewBox="0 0 15.12 17.338">
+									<g id="user_icon" data-name="user icon" transform="translate(-1368.531 -147.15)">
+										<g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1370.789 147.15)"
+											fill="none" stroke="#797c8b" stroke-width="2">
+											<ellipse cx="5.321" cy="5.158" rx="5.321" ry="5.158" stroke="none" />
+											<ellipse cx="5.321" cy="5.158" rx="4.321" ry="4.158" fill="none" />
+										</g>
+										<path id="Path_41" data-name="Path 41"
+											d="M1485.186,311.786a6.766,6.766,0,0,1,6.81-4.981,6.435,6.435,0,0,1,6.356,4.981"
+											transform="translate(-115.686 -147.545)" fill="none" stroke="#797c8b"
+											stroke-width="2" />
+									</g>
+								</svg>
+
+
+							</div>
+							<span>Users</span>
+						</a>
+						<ul class="child-side-bar">
+							<li><a href=""><span>User Permission</span></a></li>
+						</ul>
+					</li>
+
+					<li class="parent-droupdown active">
+						<a href="javascript:;" class="parent-droupdown-menu active">
+							<div class="svg-icon2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="14.991" height="17.164"
+									viewBox="0 0 14.991 17.164">
+									<path id="Exam_Icon" data-name="Exam Icon"
+										d="M6.331,13.015h5.83v1.716H6.331Zm0-3.433H14.66V11.3H6.331Zm0-3.433H14.66V7.866H6.331Zm9.994-3.433H12.844a2.465,2.465,0,0,0-4.7,0H4.666a1.417,1.417,0,0,0-.333.034,1.659,1.659,0,0,0-.841.472,1.723,1.723,0,0,0-.358.549A1.7,1.7,0,0,0,3,4.433V16.448a1.766,1.766,0,0,0,.491,1.219,1.659,1.659,0,0,0,.841.472,2.1,2.1,0,0,0,.333.026h11.66a1.7,1.7,0,0,0,1.666-1.716V4.433A1.7,1.7,0,0,0,16.325,2.716ZM10.5,2.5a.644.644,0,1,1-.625.644A.639.639,0,0,1,10.5,2.5Zm5.83,13.946H4.666V4.433h11.66Z"
+										transform="translate(-3 -1)" />
+								</svg>
+
+							</div>
+							<span>Examination</span>
+						</a>
+						<ul class="child-side-bar">
+							<li><a class="" href=""><span>Offline Exam</span></a></li>
+							<li><a href=""><span>Online Exam</span></a></li>
+							<li><a class="" href=""><span>Grades</span></a></li>
+							<li><a class="" href=""><span>Promotion</span></a></li>
+						</ul>
+					</li>
+
+					<li class="parent-droupdown ">
+						<a href="javascript:;" class="parent-droupdown-menu ">
+							<div class="svg-icon2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="17.545" height="15.017"
+									viewBox="0 0 17.545 15.017">
+									<path id="Academic_icon" data-name="Academic icon"
+										d="M9.772,3,1,8.006,4.19,9.824V14.83l5.582,3.187,5.582-3.187V9.824l1.595-.909V14.68h1.595V8.006Zm5.439,5.006-5.439,3.1-5.439-3.1L9.772,4.9ZM13.76,13.837,9.772,16.115,5.785,13.837v-3.1l3.987,2.278,3.987-2.278v3.1Z"
+										transform="translate(-1 -3)" />
+								</svg>
+							</div>
+							<span>Academic</span>
+						</a>
+						<ul class="child-side-bar">
+							<li class="parent-droupdown-2nd">
+								<a href="javascript:;" class="parent-droupdown-menu-2nd">
+									<span>Attendance</span>
+								</a>
+								<ul class="child-side-bar-2nd">
+									<li><a href=""><span>Daily Attendance</span></a></li>
+									<li><a class="active" href=""><span>Biometric Attendance</span></a></li>
+								</ul>
+							</li>
+							<li class="parent-droupdown-2nd ">
+								<a href="javascript:;" class="parent-droupdown-menu-2nd ">
+									<span>Classes</span>
+								</a>
+								<ul class="child-side-bar-2nd">
+									<li><a class="" href=""><span>Class List</span></a></li>
+									<li><a href=""><span></span></a></li>
+									<li><a class="" href=""><span></span></a></li>
+									<li><a class="" href=""><span></span></a></li>
+									<li><a class="" href=""><span>Class Room</span></a></li>
+									<li><a class="" href=""><span>Department</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="parent-droupdown">
+						<a href="javascript:;" class="parent-droupdown-menu">
+							<div class="svg-icon2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="19.197" height="15.357"
+									viewBox="0 0 19.197 15.357">
+									<path id="chalkboard-user-solid_1_" data-name="chalkboard-user-solid (1)"
+										d="M17.757,0H6.239A1.466,1.466,0,0,0,4.8,1.489V2.879a3.622,3.622,0,0,1,1.893.534V1.92H17.25v8.638H15.33V9.118a.48.48,0,0,0-.48-.48H11.971a.48.48,0,0,0-.48.48v1.44H8.617a4.809,4.809,0,0,1,1.523,1.92h7.616A1.465,1.465,0,0,0,19.2,10.99v-9.5A1.466,1.466,0,0,0,17.757,0ZM4.8,9.6a2.879,2.879,0,1,0,0-5.759A2.879,2.879,0,1,0,4.8,9.6Zm.96.96H3.839A3.839,3.839,0,0,0,0,14.4a.96.96,0,0,0,.96.96H8.638a.96.96,0,0,0,.96-.96A3.839,3.839,0,0,0,5.759,10.558Z" />
+								</svg>
+							</div>
+							<span>Online teaching</span>
+						</a>
+						<ul class="child-side-bar">
+							<li><a href=""><span>Online Course</span></a></li>
+							<li><a href=""><span>Live Class</span></a></li>
+							<li><a href=""><span>Assignment</span></a></li>
+						</ul>
+					</li>
+
+					<li class="parent-droupdown">
+						<a href="javascript:;" class="parent-droupdown-menu">
+							<div class="svg-icon2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16.184"
+									viewBox="0 0 17 16.184">
+									<path id="Accounting_Icon" data-name="Accounting Icon"
+										d="M17.3,6.6H13.9V4.8L12.2,3H8.8L7.1,4.8V6.6H3.7A1.756,1.756,0,0,0,2,8.395v4.5a1.8,1.8,0,0,0,.85,1.555v2.94a1.745,1.745,0,0,0,1.7,1.8h11.9a1.745,1.745,0,0,0,1.7-1.8V14.437A1.831,1.831,0,0,0,19,12.89v-4.5A1.756,1.756,0,0,0,17.3,6.6ZM8.8,4.8h3.4V6.6H8.8Zm-5.1,3.6H17.3v4.5H13.05v-2.7H7.95v2.7H3.7Zm7.65,5.395H9.65v-1.8h1.7Zm5.1,3.6H4.55v-2.7h3.4v.9h5.1v-.9h3.4Z"
+										transform="translate(-2 -3)" />
+								</svg>
+
+								</svg>
+							</div>
+							<span>Accounting</span>
+						</a>
+						<ul class="child-side-bar">
+							<li><a href=""><span>Student fee manager</span></a></li>
+							<li class="parent-droupdown-2nd">
+								<a href="javascript:;" class="parent-droupdown-menu-2nd">
+									<span>Expenses</span>
+								</a>
+								<ul class="child-side-bar-2nd">
+									<li><a href=""><span>Expense Manager</span></a></li>
+									<li><a href=""><span>Expense Category</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="parent-droupdown">
+						<a href="javascript:;" class="parent-droupdown-menu">
+							<div class="svg-icon2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="13.709"
+									viewBox="0 0 17 13.709">
+									<path id="Office_icon" data-name="Office icon"
+										d="M12.364-251.291v-1.523h3.091v-10.663H8.5v1.066L6.954-263.5V-265H17v13.709Zm-6.182,0V-255.1H4.637v3.808H0v-7.616l5.409-3.809,5.409,3.809v7.616Zm1.545-5.332v3.809H9.273v-5.332l-3.864-2.666-3.864,2.666v5.332H3.091v-3.809Zm5.1,2.161V-256.3h1.739v1.841Zm0-2.763v-1.841h1.739v1.841Zm0-2.762v-1.842h1.739v1.842Z"
+										transform="translate(0 265)" />
+								</svg>
+
+							</div>
+							<span>Back Office</span>
+						</a>
+						<ul class="child-side-bar">
+							<li class="parent-droupdown-2nd">
+								<a href="javascript:;" class="parent-droupdown-menu-2nd">
+									<span>Library</span>
+								</a>
+								<ul class="child-side-bar-2nd">
+									<li><a href=""><span>Book list Manager</span></a></li>
+									<li><a class="active" href=""><span>Book Issue Report</span></a></li>
+								</ul>
+							</li>
+
+							<li class="parent-droupdown-2nd">
+								<a href="javascript:;" class="parent-droupdown-menu-2nd">
+									<span>Events</span>
+								</a>
+								<ul class="child-side-bar-2nd">
+									<li><a href=""><span>Public Events</span></a></li>
+									<li><a class="active" href=""><span>Academic Events</span></a></li>
+								</ul>
+							</li>
+
+							<li class="parent-droupdown-2nd">
+								<a href="javascript:;" class="parent-droupdown-menu-2nd">
+									<span>Noticeboard</span>
+								</a>
+								<ul class="child-side-bar-2nd">
+									<li><a href=""><span>Public Notice</span></a></li>
+									<li><a class="active" href=""><span>Academic Notice</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+
+					<li class="parent-droupdown">
+						<a href="javascript:;" class="parent-droupdown-menu">
+							<div class="svg-icon3">
+								<svg xmlns="http://www.w3.org/2000/svg" width="17.018" height="17.058"
+									viewBox="0 0 17.018 17.058">
+									<g transform="translate(-215.957 -39.599)">
+										<path
+											d="M9.315,4.138a1.485,1.485,0,0,1,2.888,0,1.485,1.485,0,0,0,2.218.921,1.489,1.489,0,0,1,2.043,2.048,1.491,1.491,0,0,0,.918,2.223,1.491,1.491,0,0,1,0,2.9,1.491,1.491,0,0,0-.919,2.224A1.489,1.489,0,0,1,14.42,16.5a1.485,1.485,0,0,0-2.217.92,1.485,1.485,0,0,1-2.888,0A1.485,1.485,0,0,0,7.1,16.5,1.489,1.489,0,0,1,5.054,14.45a1.491,1.491,0,0,0-.918-2.223,1.491,1.491,0,0,1,0-2.9,1.491,1.491,0,0,0,.919-2.224A1.489,1.489,0,0,1,7.1,5.059a1.485,1.485,0,0,0,2.217-.92Z"
+											transform="translate(213.707 37.349)" fill="none" stroke="#797c8b"
+											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+										<circle cx="2" cy="2" r="2" transform="translate(222.466 46.349)" fill="none"
+											stroke="#797c8b" stroke-linecap="round" stroke-linejoin="round"
+											stroke-width="1.5" />
+									</g>
+								</svg>
+							</div>
+							<span>Settings</span>
+						</a>
+						<ul class="child-side-bar">
+							<li><a href=""><span>System Settings</span></a></li>
+							<li><a href=""><span>Website Settings</span></a></li>
+							<li><a href=""><span>School Settings</span></a></li>
+							<li><a href=""><span>Payment Settings</span></a></li>
+							<li><a href=""><span>Language Settings</span></a></li>
+							<li><a href=""><span>SMTP Settings</span></a></li>
+							<li><a href=""><span>About</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="navigation-section-backdrop"></div>
+		</div>
+		<div class="body-section">
+			<header class="page-header">
+				<div class="row w-100 m-0">
+					<div class="col-auto">
+						<a href="javascript:;" class="navbar-toggle" id="navbar-toggle"><i class="bi bi-list"></i></a>
+						<div class="header-title">
+							<h5 class="fw-600 mt-5px">Dashboard</h5>
+							<!-- <span>Welcome Back David Warner!</span> -->
+						</div>
+					</div>
+
+					<div class="col-auto ms-auto pe-0">
+						<div class="header-menu">
+							<ul>
+								<li>
+									<a href="" class="list">
+										<span class="success-counter">20</span>
+										<i class="bi bi-bell"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="list">
+										<span class="danger-counter">20</span>
+										<i class="bi bi-chat-dots"></i>
+									</a>
+								</li>
+								<li class="user-profile">
+									<div class="btn-group">
+										<button class="btn btn-secondary dropdown-toggle" type="button"
+											id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true"
+											aria-expanded="false">
+											<div class="">
+												<img src="assets/images/user.jpeg" height="42px">
+											</div>
+											<div class="px-2 text-start">
+												<span class="user-name">John Doe</span>
+												<span class="user-title">Superadmin</span>
+											</div>
+										</button>
+										<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="defaultDropdown">
+											<li class="user-profile">
+												<button class="btn w-100 d-flex px-30px py-20px" type="button">
+													<div class="">
+														<img class="radious-5px" src="assets/images/user.jpeg"
+															height="42px">
+													</div>
+													<div class="px-2 text-start">
+														<span class="user-name">John Doe</span>
+														<span class="user-title">Superadmin</span>
+													</div>
+												</button>
+											</li>
+											<li>
+												<hr class="my-0">
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">
+													<i class="bi bi-person"></i> My Account
+												</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">
+													<i class="bi bi-key"></i> Change Password
+												</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">
+													<i class="bi bi-gear"></i> Settings
+												</a>
+											</li>
+											<li>
+												<hr class="mt-0">
+											</li>
+											<li><a class="btn text-start btn-primary py-3 px-4 ms-30px"
+													href="login/logout">Log out</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="row">
+				<div class="col-xl-12">
+					<button class="btn btn-outline-primary float-end mb-3" type="button" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Create Admin</button>
+				</div><!-- end col-->
+			</div>
+			<div class="card py-5 px-4">
+				<div class="card-body">
+					<div class="table-responsive">
+						<table class="table table-responsive text-wrap table-hover w-100">
+							<thead>
+								<tr>
+									<th>Profile</th>
+									<th>Email</th>
+									<th>Admin of</th>
+									<th>Options</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class="dAdmin_profile d-flex align-items-center min-w-200px">
+											<div class="dAdmin_profile_img">
+												<img class="img-fluid" width="50" height="50"
+													src="assets/images/user.png">
+											</div>
+											<div class="dAdmin_profile_name">
+												<h4>Jony Bristow</h4>
+												<p>University of Michigan</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-245px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p>admin@domain.com</p>
+												<p>jonybristow@domain.com</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-330px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p><span>Phone:</span> + (00) 1234-5678</p>
+												<p><span>Address:</span> Melbourne, S/A 120, Australia</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_btn d-flex">
+											<a href="#" class="btn btn-light-success" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Edit">
+												<i class="bi bi-pencil"></i>
+											</a>
+											<a href="javascript:;" class="btn btn-light-danger" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Delete">
+												<i class="bi bi-trash"></i>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="dAdmin_profile d-flex align-items-center min-w-200px">
+											<div class="dAdmin_profile_img">
+												<img class="img-fluid" width="50" height="50"
+													src="assets/images/user.png">
+											</div>
+											<div class="dAdmin_profile_name">
+												<h4>Jony Bristow</h4>
+												<p>University of Michigan</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-245px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p>admin@domain.com</p>
+												<p>jonybristow@domain.com</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-330px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p><span>Phone:</span> + (00) 1234-5678</p>
+												<p><span>Address:</span> Melbourne, S/A 120, Australia</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_btn d-flex">
+											<a href="#" class="btn btn-light-success" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Edit">
+												<i class="bi bi-pencil"></i>
+											</a>
+											<a href="javascript:;" class="btn btn-light-danger" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Delete">
+												<i class="bi bi-trash"></i>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="dAdmin_profile d-flex align-items-center min-w-200px">
+											<div class="dAdmin_profile_img">
+												<img class="img-fluid" width="50" height="50"
+													src="assets/images/user.png">
+											</div>
+											<div class="dAdmin_profile_name">
+												<h4>Jony Bristow</h4>
+												<p>University of Michigan</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-245px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p>admin@domain.com</p>
+												<p>jonybristow@domain.com</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-330px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p><span>Phone:</span> + (00) 1234-5678</p>
+												<p><span>Address:</span> Melbourne, S/A 120, Australia</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_btn d-flex">
+											<a href="#" class="btn btn-light-success" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Edit">
+												<i class="bi bi-pencil"></i>
+											</a>
+											<a href="javascript:;" class="btn btn-light-danger" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Delete">
+												<i class="bi bi-trash"></i>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="dAdmin_profile d-flex align-items-center min-w-200px">
+											<div class="dAdmin_profile_img">
+												<img class="img-fluid" width="50" height="50"
+													src="assets/images/user.png">
+											</div>
+											<div class="dAdmin_profile_name">
+												<h4>Jony Bristow</h4>
+												<p>University of Michigan</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-245px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p>admin@domain.com</p>
+												<p>jonybristow@domain.com</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-330px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p><span>Phone:</span> + (00) 1234-5678</p>
+												<p><span>Address:</span> Melbourne, S/A 120, Australia</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_btn d-flex">
+											<a href="#" class="btn btn-light-success" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Edit">
+												<i class="bi bi-pencil"></i>
+											</a>
+											<a href="javascript:;" class="btn btn-light-danger" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Delete">
+												<i class="bi bi-trash"></i>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="dAdmin_profile d-flex align-items-center min-w-200px">
+											<div class="dAdmin_profile_img">
+												<img class="img-fluid" width="50" height="50"
+													src="assets/images/user.png">
+											</div>
+											<div class="dAdmin_profile_name">
+												<h4>Jony Bristow</h4>
+												<p>University of Michigan</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-245px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p>admin@domain.com</p>
+												<p>jonybristow@domain.com</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-330px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p><span>Phone:</span> + (00) 1234-5678</p>
+												<p><span>Address:</span> Melbourne, S/A 120, Australia</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_btn d-flex">
+											<a href="#" class="btn btn-light-success" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Edit">
+												<i class="bi bi-pencil"></i>
+											</a>
+											<a href="javascript:;" class="btn btn-light-danger" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Delete">
+												<i class="bi bi-trash"></i>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="dAdmin_profile d-flex align-items-center min-w-200px">
+											<div class="dAdmin_profile_img">
+												<img class="img-fluid" width="50" height="50"
+													src="assets/images/user.png">
+											</div>
+											<div class="dAdmin_profile_name">
+												<h4>Jony Bristow</h4>
+												<p>University of Michigan</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-245px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p>admin@domain.com</p>
+												<p>jonybristow@domain.com</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_info d-flex align-items-center min-w-330px">
+											<div class="dAdmin_info_img">
+												<i class="bi bi-envelope"></i>
+											</div>
+											<div class="dAdmin_info_name">
+												<p><span>Phone:</span> + (00) 1234-5678</p>
+												<p><span>Address:</span> Melbourne, S/A 120, Australia</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="dAdmin_btn d-flex">
+											<a href="#" class="btn btn-light-success" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Edit">
+												<i class="bi bi-pencil"></i>
+											</a>
+											<a href="javascript:;" class="btn btn-light-danger" data-bs-toggle="tooltip"
+												data-bs-placement="left" title="Delete">
+												<i class="bi bi-trash"></i>
+											</a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="offcanvas offcanvas-end ekator-offcanvas" tabindex="-1" id="offcanvasRight"
+			aria-labelledby="offcanvasRightLabel">
+			<div class="offcanvas-header align-items-center">
+				<h5 id="offcanvasRightLabel">Update Admin</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="eoff-form">
+					<form method="POST" class="d-block" action="">
+						<div class="form-row">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="name" name="name"
+									placeholder="Provide admon name" required>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" name="email"
+									placeholder="Provide admon email" required>
+							</div>
+
+							<div class="form-group">
+								<label for="phone">Phone Number</label>
+								<input type="number" class="form-control" id="phone" name="phone"
+									placeholder="Provide admin phone number" required>
+							</div>
+
+							<div class="form-group">
+								<label for="admin_group">Admin of</label>
+								<select name="admin_group" id="admin_group" class="form-control select2"
+									data-toggle="select2">
+									<option value="">Provide admin university</option>
+									<option value="Dhaka">Dhaka</option>
+									<option value="Khulna">Khulna</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="gender_group">Gender</label>
+								<select name="gender_group" id="gender_group" class="form-control select2"
+									data-toggle="select2">
+									<option value="">Provide admin gender</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="blood_group">Blood group</label>
+								<select name="blood_group" id="blood_group" class="form-control select2"
+									data-toggle="select2">
+									<option value="">Select a blood group</option>
+									<option value="a+">A+</option>
+									<option value="a-">A-</option>
+									<option value="b+">B+</option>
+									<option value="b-">B-</option>
+									<option value="ab+">AB+</option>
+									<option value="ab-">AB-</option>
+									<option value="o+">O+</option>
+									<option value="o-">O-</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="phone">Address</label>
+								<textarea class="form-control" id="address" name="address"
+									placeholder="Provide admin address" required></textarea>
+							</div>
+
+							<div class="form-group">
+								<a href="#" class="updateAdmin-btn">Update admin</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--Bootstrap bundle with popper-->
+		<script src="assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+		<!--Custom Script-->
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/custom.js"></script>
+
+
+		<script type="text/javascript"
+			src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.4/b-2.2.2/b-print-2.2.2/r-2.2.9/datatables.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"
+			integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww=="
+			referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
