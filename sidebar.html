@@ -5454,11 +5454,17 @@
                             <label for="eInputDateTime" class="eForm-label"
                               >Date and Time</label
                             >
-                            <input
+                            <!-- <input
                               type="datetime-local"
                               class="form-control eForm-control"
                               id="eInputDateTime"
                               value="2022-05-17T12:13"
+                            /> -->
+                            <input
+                              type="text"
+                              class="form-control eForm-control"
+                              name="datetimes"
+                              id="eInputDateTime"
                             />
                           </div>
                         </form>
@@ -5472,10 +5478,10 @@
                               >Date</label
                             >
                             <input
-                              type="date"
+                              type="text"
                               class="form-control eForm-control"
                               id="eInputDate"
-                              value="2022-05-17"
+                              name="eDefaultDateRange"
                             />
                           </div>
                           <div class="fpb-7">
@@ -5494,10 +5500,10 @@
                               >Week</label
                             >
                             <input
-                              type="week"
+                              type="text"
                               class="form-control eForm-control"
                               id="eInputWeek"
-                              value="2022-W23"
+                              name="weeks"
                             />
                           </div>
                           <div class="fpb-7">

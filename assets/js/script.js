@@ -208,7 +208,6 @@ $(function () {
     }
   );
 });
-
 // Date range
 $(function () {
   $('input[name="eDateRange"]').daterangepicker(
@@ -221,6 +220,37 @@ $(function () {
           start.format("YYYY-MM-DD") +
           " to " +
           end.format("YYYY-MM-DD")
+      );
+    }
+  );
+});
+// Date Times
+$(function () {
+  $('input[name="datetimes"]').daterangepicker({
+    timePicker: true,
+    singleDatePicker: true,
+    startDate: moment().startOf("hour"),
+    endDate: moment().startOf("hour").add(32, "hour"),
+    locale: {
+      format: "M/DD hh:mm A",
+    },
+  });
+});
+$(function () {
+  $('input[name="weeks"]').daterangepicker(
+    {
+      showISOWeekNumbers: true,
+      singleDatePicker: true,
+    },
+    function (start, end, label) {
+      console.log(
+        "New date range selected: " +
+          start.format("YYYY-MM-DD") +
+          " to " +
+          end.format("YYYY-MM-DD") +
+          " (predefined range: " +
+          label +
+          ")"
       );
     }
   );

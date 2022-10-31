@@ -3961,16 +3961,16 @@ input[type=time]::-webkit-calendar-picker-indicator {
   border-bottom: 1px solid #cacfd4 !important;
 }
 .eAccordion .accordion-item .accordion-header .accordion-button {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: 500;
   color: #181c32;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  padding: 12px 20px;
+  padding: 7px 12px 7px 20px;
 }
 .eAccordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   position: relative;
-  background-color: #f6f2ff;
+  background-color: #f6f6f6;
   border-top: 1px solid #f0e9ff;
   border-bottom: 1px solid #f0e9ff;
   margin-top: -1px;
@@ -3978,6 +3978,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 .eAccordion .accordion-item .accordion-header .accordion-button::after {
   background-image: url(../images/arrow_bottom.svg) !important;
+  background-size: 12px;
+  height: 7px;
 }
 .eAccordion .accordion-item .accordion-body {
   padding: 4px 19px 6px;
@@ -3993,12 +3995,12 @@ input[type=time]::-webkit-calendar-picker-indicator {
   border: 1px solid #cacfd4;
 }
 .eAccordion-flush .accordion-item .accordion-header .accordion-button {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: 500;
   color: #181c32;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  padding: 12px 20px;
+  padding: 7px 12px 7px 20px;
 }
 .eAccordion-flush .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   position: relative;
@@ -4009,6 +4011,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 .eAccordion-flush .accordion-item .accordion-header .accordion-button::after {
   background-image: url(../images/arrow_bottom.svg) !important;
+  background-size: 12px;
+  height: 7px;
 }
 .eAccordion-flush .accordion-item .accordion-body {
   padding: 4px 19px 6px;
