@@ -1,42 +1,3 @@
-// Accordion Flush
-.eAccordion-flush {
-  padding: 0 14px;
-  border: 1px solid rgba(231, 234, 243, 0.7);
-  border-radius: 10px;
-  .accordion-item {
-    .accordion-header {
-      .accordion-button {
-        font-size: 14px;
-        line-height: 30px;
-        font-weight: $fw_Medium;
-        color: $eColor_Blueish;
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        padding: 7px 12px 7px 20px;
-        &:not(.collapsed) {
-          position: relative;
-          background-color: #f6f2ff;
-          border: 1px solid rgba(231, 234, 243, 0.7);
-          margin-top: -1px;
-          z-index: 10;
-        }
-        &::after {
-          background-image: url(../images/arrow_bottom.svg) !important;
-          background-size: 12px;
-          height: 7px;
-        }
-      }
-    }
-    .accordion-body {
-      padding: 4px 19px 6px;
-      p {
-        font-size: 13px;
-        font-weight: $fw_Regular;
-        color: $eColor_Blackish;
-      }
-    }
-  }
-}
-
 .custom-accordion {
   @media screen and (max-width: 991px) {
     margin-bottom: 20px;
@@ -64,9 +25,7 @@
           position: relative;
           background-color: #f1f2f7;
           border-top: 0px solid rgba(231, 234, 243, 0.7);
-          border-bottom: 1px solid rgba(231, 234, 243, 0.7);
-          // margin-top: -1px;
-          // z-index: 10;
+          border-bottom: 0px solid rgba(231, 234, 243, 0.7);
         }
         &::after {
           background-image: url(../images/arrow_bottom.svg) !important;
@@ -76,6 +35,9 @@
         }
         &:focus {
           border-color: transparent !important;
+        }
+        &:focus-within {
+          outline: none !important;
         }
       }
     }
@@ -107,9 +69,7 @@
           position: relative;
           background-color: #f1f2f7;
           border-top: 0px solid rgba(231, 234, 243, 0.7);
-          border-bottom: 1px solid rgba(231, 234, 243, 0.7);
-          // margin-top: -1px;
-          // z-index: 10;
+          border-bottom: 0px solid rgba(231, 234, 243, 0.7);
         }
         &::after {
           background-image: url(../images/arrow_bottom.svg) !important;
@@ -119,6 +79,9 @@
         }
         &:focus {
           border-color: transparent !important;
+        }
+        &:focus-within {
+          outline: none !important;
         }
       }
     }

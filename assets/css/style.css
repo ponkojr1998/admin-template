@@ -3947,40 +3947,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
   border-radius: 50%;
 }
 
-.eAccordion-flush {
-  padding: 0 14px;
-  border: 1px solid rgba(231, 234, 243, 0.7);
-  border-radius: 10px;
-}
-.eAccordion-flush .accordion-item .accordion-header .accordion-button {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #181c32;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  padding: 7px 12px 7px 20px;
-}
-.eAccordion-flush .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-  position: relative;
-  background-color: #f6f2ff;
-  border: 1px solid rgba(231, 234, 243, 0.7);
-  margin-top: -1px;
-  z-index: 10;
-}
-.eAccordion-flush .accordion-item .accordion-header .accordion-button::after {
-  background-image: url(../images/arrow_bottom.svg) !important;
-  background-size: 12px;
-  height: 7px;
-}
-.eAccordion-flush .accordion-item .accordion-body {
-  padding: 4px 19px 6px;
-}
-.eAccordion-flush .accordion-item .accordion-body p {
-  font-size: 13px;
-  font-weight: 400;
-  color: #797c8b;
-}
-
 @media screen and (max-width: 991px) {
   .custom-accordion {
     margin-bottom: 20px;
@@ -4010,7 +3976,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   position: relative;
   background-color: #f1f2f7;
   border-top: 0px solid rgba(231, 234, 243, 0.7);
-  border-bottom: 1px solid rgba(231, 234, 243, 0.7);
+  border-bottom: 0px solid rgba(231, 234, 243, 0.7);
 }
 .custom-accordion .accordion-item .accordion-header .accordion-button::after {
   background-image: url(../images/arrow_bottom.svg) !important;
@@ -4020,6 +3986,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 .custom-accordion .accordion-item .accordion-header .accordion-button:focus {
   border-color: transparent !important;
+}
+.custom-accordion .accordion-item .accordion-header .accordion-button:focus-within {
+  outline: none !important;
 }
 .custom-accordion .accordion-item .accordion-body {
   padding: 4px 19px 6px;
@@ -4047,7 +4016,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   position: relative;
   background-color: #f1f2f7;
   border-top: 0px solid rgba(231, 234, 243, 0.7);
-  border-bottom: 1px solid rgba(231, 234, 243, 0.7);
+  border-bottom: 0px solid rgba(231, 234, 243, 0.7);
 }
 .custom-accordion-flush .accordion-item .accordion-header .accordion-button::after {
   background-image: url(../images/arrow_bottom.svg) !important;
@@ -4057,6 +4026,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 .custom-accordion-flush .accordion-item .accordion-header .accordion-button:focus {
   border-color: transparent !important;
+}
+.custom-accordion-flush .accordion-item .accordion-header .accordion-button:focus-within {
+  outline: none !important;
 }
 .custom-accordion-flush .accordion-item .accordion-body {
   padding: 4px 19px 6px;
