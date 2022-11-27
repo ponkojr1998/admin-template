@@ -2281,6 +2281,14 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.0039215686);
   border-radius: 5px;
 }
+.eSection-wrap-2 .table-responsive {
+  overflow-x: visible;
+}
+@media screen and (width < 1300px) {
+  .eSection-wrap-2 .table-responsive {
+    overflow-x: auto;
+  }
+}
 
 .eMain {
   padding-bottom: 20px;
@@ -5029,7 +5037,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 
 .select2-container--default .select2-results > .select2-results__options {
-  max-height: initial !important;
+  max-height: 160px !important;
 }
 
 .att-report-banner {

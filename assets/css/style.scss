@@ -52,6 +52,12 @@ body {
   background-color: #fff;
   box-shadow: 0 6px 15px #00000001;
   border-radius: 5px;
+  .table-responsive {
+    overflow-x: visible;
+    @media screen and (width< 1300px) {
+      overflow-x: auto;
+    }
+  }
 }
 .eMain {
   padding-bottom: 20px;
