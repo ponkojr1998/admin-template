@@ -22,6 +22,9 @@ $sidebar_width: 223px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 991px) {
+    justify-content: flex-start;
+  }
   .img_wrapper {
     min-width: 78px;
     text-align: center;
@@ -151,7 +154,7 @@ $sidebar_width: 223px;
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
-  padding-right: 15px;
+  margin-right: 15px;
 }
 .sidebar .nav-links > li.showMenu {
   .iocn-link {
@@ -169,7 +172,7 @@ $sidebar_width: 223px;
     .arrow {
       transform: rotate(90deg);
       padding-right: 0;
-      transform-origin: 45% 45%;
+      // transform-origin: 45% 45%;
     }
   }
 }
@@ -392,25 +395,26 @@ $sidebar_width: 223px;
   @media screen and (max-width: 991px) {
     display: block;
     position: absolute;
-    top: 10%;
-    left: 50%;
+    top: 20px;
+    right: 10px;
     transform: translateX(-50%);
-    width: auto;
-    height: auto;
+    width: 30px;
+    height: 30px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 50%;
     text-align: center;
     line-height: 30px;
     cursor: pointer;
     color: #0d6efd;
     svg {
-      fill: #fff;
-      width: 20px;
+      path {
+        fill: #0d6efd;
+      }
     }
   }
 }
-.sidebar.close {
-  .closeIcon {
-    right: -15px;
-  }
-}
+// .sidebar.close {
+//   .closeIcon {
+//     right: -15px;
+//   }
+// }
