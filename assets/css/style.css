@@ -1717,13 +1717,13 @@ Body Section
 
 .sidebar .nav-links > li .arrow {
   min-width: 50px;
-  height: 50px;
   color: #797c8b;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
   margin-right: 15px;
+  margin-top: 5px;
 }
 
 .sidebar .nav-links > li.showMenu .iocn-link a .sidebar_icon svg {
